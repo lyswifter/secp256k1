@@ -1,4 +1,4 @@
-import { Buffer } from "buffer";
+const Buffer = require('safe-buffer').Buffer;
 
 export function fromHex(data) {
   return new Uint8Array(Buffer.from(data, "hex"));
